@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GVRV</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="GVRV_PFP_Summer-photoaidcom-cropped.jpg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        html {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #F6C33F, #8f94fb);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section:before {
+            content: '';
+            position: absolute;
+            top: -75px;
+            left: -75px;
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        section:after {
+            content: '';
+            position: absolute;
+            bottom: -75px;
+            right: -75px;
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        section#about {
+            background: linear-gradient(135deg, #F6C33F, #8ec5fc);
+        }
+
+        section#rules {
+            background: linear-gradient(135deg, #F6C33F, #a6c1ee);
+        }
+
+        section#services {
+            background: linear-gradient(135deg, #F6C33F, #a1c4fd);
+        }
+
+        section#ingame-rules {
+            background: linear-gradient(135deg, #F6C33F, #fbc2eb);
+            text-align: center;
+        }
+
+        section#content {
+            background: linear-gradient(135deg, #F6C33F, #fbc2eb);
+        }
+
+        section#join {
+            background: linear-gradient(135deg, #F6C33F, #a1c4fd);
+        }
+
+        .join-button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #4e54c8;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            z-index: 1;
+            position: relative;
+        }
+
+        .join-button:hover {
+            background-color: #8f94fb;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #F6C33F, #fbc2eb);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            cursor: pointer;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #4e54c8;
+        }
+
+        ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .fade-in-delayed {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .fade-in-more-delayed {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="header-text">Welcome to Greenville Roleplay Vista</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#services">Public Services</a></li>
+                <li><a href="#ingame-rules">In-Game Rules</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Greenville Roleplay Vista is a community-driven roleplay server on Discord. We provide a fun and engaging environment for roleplaying enthusiasts. Our server offers a variety of roleplay scenarios and events, ensuring there's something for everyone.</p>
+    </section>
+    <section id="rules">
+        <h2>Server Rules</h2>
+        <ul>
+            <li>Age Requirement: You must be 13 years of age or older to join the server.</li>
+            <li>Respect Everyone.</li>
+            <li>Keep Discussions Civil.</li>
+            <li>Respect Privacy.</li>
+            <li>No NSFW Content.</li>
+            <li>No Spamming or Self-Promotion.</li>
+            <li>No Drama or Toxicity.</li>
+            <li>Listen to the Staff Team.</li>
+            <li>Follow Discord's Terms of Service.</li>
+        </ul>
+    </section>
+    <section id="services">
+        <h2>Public Services</h2>
+        <ul>
+            <li>Wisconsin State Patrol</li>
+            <li>Outagamie County Sheriff's Office</li>
+            <li>Fox Valley Metro Police Department</li>
+            <li>National Park Service</li>
+            <li>Greenville Fire Department</li>
+            <li>Department of Transportation</li>
+        </ul>
+    </section>
+    <section id="ingame-rules">
+        <h2>In-Game Rules</h2>
+        <ul>
+            <li><strong>Fail Roleplay (FRP):</strong> FRP (Fail Roleplay) is not permitted within this community. We strive to maintain immersive and authentic roleplaying experiences for all members, and engaging in FRP detracts from that goal. Please adhere to the established roleplaying standards and guidelines to ensure a positive and enjoyable environment for everyone.</li>
+            <li><strong>Combat Logging:</strong> Participants are expected to remain connected during active roleplay scenarios, particularly those involving law enforcement or emergency situations. Disconnecting from the game to evade consequences or interactions, known as Combat Logging, is strictly forbidden.</li>
+            <li><strong>Cop/Staff Baiting:</strong> Refrain from intentionally provoking law enforcement officers or server staff members with the aim of eliciting a negative response or encouraging rule breaches. Show respect for the roles and authority of in-game law enforcement and server staff.</li>
+            <li><strong>Vehicle Spawning Rules:</strong> Vehicle spawning is only permitted at designated locations, such as the dealership, apartments, claimed houses, friend's houses, and specific commercial areas. Please obtain staff permission via "!Staff Respawn Permissions" for spawning outside these areas, and refrain from spawning vehicles on roads.</li>
+            <li><strong>Official Asset Usage:</strong> Please respect the server's official assets, including liveries and related resources. Refrain from creating or using non-official assets without appropriate permissions from the management team.</li>
+            <li><strong>Bodycam Requirements:</strong> LEOs are required to use bodycams during all interactions. Civilians should have recording devices enabled during roleplay. Ensure all footage is retained for a minimum of one week to support any potential reports or disputes.</li>
+        </ul>
+    </section>
+    <section id="content">
+      <h2>Content</h2>
+      <p>Our server features a variety of content to enhance your roleplaying experience. Here, you'll find announcements, event schedules, roleplay tips, and more. We strive to provide engaging and interactive content to keep our community active and entertained.</p>
+      <h3>YouTube</h3>
+      <p>Subscribe to our YouTube channel for the latest videos, tutorials, and event highlights.</p>
+      <a href="https://www.youtube.com/@Greenville-Roleplay-Vista" target="_blank" class="join-button">Subscribe on YouTube</a>
+      
+      <h3>TikTok</h3>
+      <p>Follow us on TikTok for short, entertaining clips from our roleplay sessions and community highlights.</p>
+      <a href="https://www.tiktok.com/@greenvilleroleplayvista" target="_blank" class="join-button">Follow on TikTok</a>
+  </section>
+    <section id="join">
+        <h2>Join Us</h2>
+        <p>If you're ready to join our vibrant roleplaying community, click the button below to get started. We can't wait to see you in Greenville Roleplay Vista!</p>
+        <a href="https://discord.gg/A43aUJcJ6B" class="join-button">Join the Community</a>
+    </section>
+    <footer>
+        <p id="footer-text">GVRV &copy; 2024. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const headerText = document.getElementById('header-text');
+            const footerText = document.getElementById('footer-text');
+            const sections = document.querySelectorAll('section');
+
+            // Add fade-in classes to elements
+            headerText.classList.add('fade-in');
+            footerText.classList.add('fade-in-delayed');
+
+            sections.forEach((section, index) => {
+                if (index % 2 === 0) {
+                    section.classList.add('fade-in-delayed');
+                } else {
+                    section.classList.add('fade-in-more-delayed');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
